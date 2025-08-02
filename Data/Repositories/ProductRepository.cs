@@ -37,7 +37,7 @@ namespace Vicporsy.Data.Repositories
 
         public async Task<List<Product>> GetAllProductAsync()
         {
-            var sql = @"SELECT * FROM PRODUCT WHERE IsActive = 1";
+            var sql = @"SELECT * FROM PRODUCT";
 
             var dados = await _context.GetListQueryAsync<Product>(_logger, sql);
 
@@ -49,7 +49,7 @@ namespace Vicporsy.Data.Repositories
             var dyn = new DynamicParameters();
             dyn.Add("Id", id);
 
-            var sql = @"SELECT * FROM PRODUCT WHERE Id = @Id AND IsActive = 1";
+            var sql = @"SELECT * FROM PRODUCT WHERE Id = @Id";
 
             var dados = await _context.GetQueryAsync<Product>(_logger, sql, dyn);
 
