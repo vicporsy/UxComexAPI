@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>VicPorsy.Contract</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>VicPorsy</Authors>
+    <Company>VicPorsy</Company>
+    <Description>Contract package for VicPorsy projects</Description>
+    <Version>2025.8.1.2</Version>
+  </PropertyGroup>
+</Project>

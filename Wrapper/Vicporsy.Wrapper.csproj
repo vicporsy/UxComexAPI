@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>VicPorsy.Wrapper</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>VicPorsy</Authors>
+    <Company>VicPorsy</Company>
+    <Description>Wrapper package for VicPorsy projects</Description>
+    <Version>2025.8.1.2</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Flurl" Version="4.0.0" />
+    <PackageReference Include="Flurl.Http" Version="4.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+    <PackageReference Include="VicPorsy.Contract" Version="2025.8.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nupkgs\" />
+  </ItemGroup>
+</Project>
